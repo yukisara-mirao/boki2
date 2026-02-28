@@ -1,0 +1,156 @@
+export const V = {
+  shohin1:  'https://youtu.be/9GzpBHWh5qI?si=9s8KLsUyBPM8Kld3',
+  shohin2:  'https://youtu.be/wAigDE5bpGs?si=cTMo4YTaaoZJ2Aw1',
+  genkin1:  'https://youtu.be/nmX6iyyR7Dc?si=ybrpUt5xsg7NvQVf',
+  genkin2:  'https://youtu.be/VWGsDj3Qkfo?si=wCrFeHU3ZN2zG4YB',
+  saiken1:  'https://youtu.be/cecuxMbtwHY?si=tMi31VVgFgLRqmNM',
+  yuka1:    'https://youtu.be/qlArNPGVJrg?si=ymNRf2WJT97z8KGd',
+  yuka2:    'https://youtu.be/dFS1LwqMWq0?si=bMVQpr13dDpq6IAJ',
+  yuka3:    'https://youtu.be/kKEQ1jqM-xY?si=W1j1cAF1fd4ISXt3',
+  kotei1:   'https://youtu.be/3kLKjjQw1EU?si=6Jfxz07njAmAxUqW',
+  kotei2:   'https://youtu.be/tyhxjFQupPo?si=e5FbQdsd07K9Z0Sf',
+  kotei3:   'https://youtu.be/_kNsTLxihVo?si=Cft_2dGL609IJC2Z',
+  lease:    'https://youtu.be/XSpq5B-5a9w?si=cdhHrKjD3Qzsd1OO',
+  mukei:    'https://youtu.be/7LfpuKkxSEc?si=lHAgjLGORZalvFeV',
+  hikiate1: 'https://youtu.be/XM2KGUu4Qgk?si=vDCfHBXLKX-cqGgy',
+  hikiate2: 'https://youtu.be/1VDGeTIyocc?si=opocaAMeIX9EGmTj',
+  gaika1:   'https://youtu.be/eH1HOlAI7aU?si=hEt_wrm03rKCvQ6r',
+  gaika2:   'https://youtu.be/C8dxK0iFu7Q?si=-VcLt_zjkNB5keji',
+  zeikin:   'https://youtu.be/oEubneYrBuU?si=JqjjFpuzPyBAHhz3',
+  zeikou1:  'https://youtu.be/ToSF1fAbK30?si=mAL2FePWu5l_CF3K',
+  zeikou2:  'https://youtu.be/woBqCnQtpY8?si=2xtOe82-Be9_HX27',
+  zeikou3:  'https://youtu.be/Tj_otI1yFFU?si=L8-O9FaO83zRnXQ2',
+  kabushiki:'https://youtu.be/peZ427Tne-Y?si=-VfzMUOhEpn3-FEq',
+  joyo2:    'https://youtu.be/uGRQoMvsFfg?si=9k70U97mWt3ANAJW',
+  kessan1:  'https://youtu.be/caq89w4_Ohc?si=j-TIL8pKjP4jozp3',
+  kessan2:  'https://youtu.be/McqL0ewEWFg?si=3iOxOb6DhXL0Bz1h',
+  shueki:   'https://youtu.be/3UwY9zq4cu4?si=C4pqVkLcNxtckDBh',
+  zaimu:    'https://youtu.be/C8ACAxagdJM?si=lBylw393uT1N6qmr',
+  honsiten: 'https://youtu.be/dRJb7pF09wo?si=4RJTlP78U2jGq2vx',
+  gappei:   'https://youtu.be/nLgnoObbeZU?si=Xp62TOdFOMk-ccgB',
+  renketsu1:'https://youtu.be/M_wg5osJ_N4?si=6QHGf_GfGpeDnWf8',
+  renketsu2:'https://youtu.be/SznP5__zJ1E?si=-vyKaVCb8ANwxMqz',
+  renketsu3:'https://youtu.be/DUpUaMgx0Wk?si=4PKZwl8q2nJzq2G2',
+  kogyo:    'https://youtube.com/playlist?list=PLSsTZLq_XOM2FJMKNX76EPXvpBuMzx2Nk&si=GblwdCUQ9Uws5jde',
+};
+
+export const TAG = {
+  s: { label: '商業', color: '#38bdf8', bg: 'rgba(56,189,248,0.1)' },
+  k: { label: '工業', color: '#c084fc', bg: 'rgba(192,132,252,0.1)' },
+  b: { label: '共通', color: '#5eead4', bg: 'rgba(94,234,212,0.1)' },
+  t: { label: '演習', color: '#f87171', bg: 'rgba(248,113,113,0.1)' },
+};
+
+export const WEEKS = [
+  {
+    label: 'W1', color: '#5eead4', cbg: 'rgba(94,234,212,0.1)',
+    title: '仕訳の感覚を取り戻す', date: '2/22 〜 2/28',
+    goal: '🎯 第1問対策を中心に、毎日仕訳に触れる習慣をつける',
+    sections: [
+      { title: '📗 商業 第1問対策（前半）', tasks: [
+        { text: '[1] 純資産の取引（株式の発行・剰余金の配当・資本変動）', book: '商業 第1問[1]', tag: 's', v: V.kabushiki },
+        { text: '[2] 税金（法人税等・消費税・追徴と還付）', book: '商業 第1問[2]', tag: 's', v: V.zeikin },
+        { text: '[3] 商品売買（三分法・売上原価対立法・返品・棚卸減耗損）', book: '商業 第1問[3]', tag: 's', v: V.shohin1 },
+        { text: '[3続] 商品売買（仕入売上の計上基準・商品評価損）', book: '商業 第1問[3]続', tag: 's', v: V.shohin2 },
+        { text: '[4] 手形と電子記録債権（裏書・割引・不渡・電子記録）', book: '商業 第1問[4]', tag: 's', v: V.saiken1 },
+      ]},
+      { title: '📘 工業 第4問対策（基礎）', tasks: [
+        { text: '工業簿記の全体像・勘定の流れを把握する', book: '工業 再生リスト①〜③', tag: 'k', v: V.kogyo },
+        { text: '費目別計算（材料費・労務費・経費）の仕訳を解く', book: '工業 再生リスト④〜⑥', tag: 'k', v: V.kogyo },
+      ]},
+      { title: '📝 週末演習', tasks: [
+        { text: '間違えた問題に⚠マークをつけて解説を読む', book: '—', tag: 'b' },
+        { text: '商業 模擬試験 第1回（時間を気にせず解く・実力確認）', book: '商業 模擬①', tag: 't' },
+      ]},
+    ],
+  },
+  {
+    label: 'W2', color: '#fbbf24', cbg: 'rgba(251,191,36,0.1)',
+    title: '仕訳完成＋第2問対策', date: '3/1 〜 3/7',
+    goal: '🎯 第1問の残りを終わらせ、第2問の個別論点を攻略する',
+    sections: [
+      { title: '📗 商業 第1問対策（後半）', tasks: [
+        { text: '[5] 現金預金（現金の範囲・銀行勘定調整表・定期預金）', book: '商業 第1問[5]', tag: 's', v: V.genkin1 },
+        { text: '[6] 固定資産（減価償却・売却・除却・圧縮記帳）', book: '商業 第1問[6]', tag: 's', v: V.kotei1 },
+        { text: '[7] リース取引（ファイナンス・オペレーティング）', book: '商業 第1問[7]', tag: 's', v: V.lease },
+        { text: '[8] 研究開発費と無形固定資産', book: '商業 第1問[8]', tag: 's', v: V.mukei },
+        { text: '[9] 有価証券（4種類の分類・評価・端数利息）', book: '商業 第1問[9]', tag: 's', v: V.yuka1 },
+        { text: '[10] 引当金（貸倒・修繕・商品保証・退職給付・賞与）', book: '商業 第1問[10]', tag: 's', v: V.hikiate1 },
+        { text: '[11] サービス業の処理', book: '商業 第1問[11]', tag: 's', v: V.shueki },
+        { text: '[12] 収益の認識基準（役務収益・契約資産・売上割戻）', book: '商業 第1問[12]', tag: 's', v: V.shueki },
+        { text: '[13] 外貨建取引（為替換算・為替予約）', book: '商業 第1問[13]', tag: 's', v: V.gaika1 },
+        { text: '[14] 本支店会計', book: '商業 第1問[14]', tag: 's', v: V.honsiten },
+        { text: '[15] 税効果会計', book: '商業 第1問[15]', tag: 's', v: V.zeikou1 },
+        { text: '[16] 連結会計（仕訳レベル）', book: '商業 第1問[16]', tag: 's', v: V.renketsu1 },
+      ]},
+      { title: '📗 商業 第2問対策（開始）', tasks: [
+        { text: '[1] 株主資本等変動計算書の作成', book: '商業 第2問[1]', tag: 's', v: V.joyo2 },
+        { text: '[7] 商品売買（個別論点）', book: '商業 第2問[7]', tag: 's', v: V.shohin2 },
+        { text: '[8] 現預金（銀行勘定調整表）', book: '商業 第2問[8]', tag: 's', v: V.genkin2 },
+      ]},
+      { title: '📘 工業 第4問対策（個別原価計算）', tasks: [
+        { text: '個別原価計算・製造間接費の配賦を解く', book: '工業 再生リスト⑦〜⑨', tag: 'k', v: V.kogyo },
+        { text: '製造原価報告書・損益計算書の作成を解く', book: '工業 再生リスト⑩〜⑪', tag: 'k', v: V.kogyo },
+      ]},
+      { title: '📝 週末演習', tasks: [
+        { text: '第1問の⚠マークの問題を再チャレンジ', book: '商業 第1問（⚠の問題）', tag: 'b' },
+        { text: '工業 模擬試験 第1回（時間を気にせず解く）', book: '工業 模擬①', tag: 't' },
+      ]},
+    ],
+  },
+  {
+    label: 'W3', color: '#f87171', cbg: 'rgba(248,113,113,0.1)',
+    title: '第2問完成＋第3問対策', date: '3/8 〜 3/14',
+    goal: '🎯 難関の連結・第3問（財務諸表）を集中攻略する',
+    sections: [
+      { title: '📗 商業 第2問対策（連結）', tasks: [
+        { text: '[2] 連結会計（基本）', book: '商業 第2問[2]', tag: 's', v: V.renketsu1 },
+        { text: '[3] 連結財務諸表・連結精算表の作成 I', book: '商業 第2問[3]', tag: 's', v: V.renketsu2 },
+        { text: '[4] 連結財務諸表・連結精算表の作成 II', book: '商業 第2問[4]', tag: 's', v: V.renketsu2 },
+        { text: '[5] 連結財務諸表・連結精算表の作成 III', book: '商業 第2問[5]', tag: 's', v: V.renketsu3 },
+        { text: '[6] 連結財務諸表・連結精算表の作成 IV', book: '商業 第2問[6]', tag: 's', v: V.renketsu3 },
+        { text: '[9]〜[13] 有価証券・固定資産・リース・外貨の個別論点', book: '商業 第2問[9〜13]', tag: 's', v: V.yuka3 },
+      ]},
+      { title: '📗 商業 第3問対策', tasks: [
+        { text: '[1] 決算整理後残高試算表の作成', book: '商業 第3問[1]', tag: 's', v: V.kessan1 },
+        { text: '[2] 財務諸表の作成 I', book: '商業 第3問[2]', tag: 's', v: V.zaimu },
+        { text: '[3] 財務諸表の作成 II', book: '商業 第3問[3]', tag: 's', v: V.zaimu },
+        { text: '[4] 財務諸表の作成 III', book: '商業 第3問[4]', tag: 's', v: V.kessan2 },
+        { text: '[5] 財務諸表の作成 IV', book: '商業 第3問[5]', tag: 's', v: V.kessan2 },
+        { text: '[7] 本支店合併財務諸表の作成', book: '商業 第3問[7]', tag: 's', v: V.honsiten },
+      ]},
+      { title: '📘 工業 第5問対策（総合原価計算）', tasks: [
+        { text: '総合原価計算（先入先出法・平均法）を解く', book: '工業 再生リスト⑫〜⑭', tag: 'k', v: V.kogyo },
+        { text: '工程別・組別・等級別総合原価計算を解く', book: '工業 再生リスト⑮〜⑰', tag: 'k', v: V.kogyo },
+      ]},
+      { title: '📝 週末演習', tasks: [
+        { text: '⚠マークの問題を集中的に繰り返す', book: '各問題集（⚠の問題）', tag: 'b' },
+        { text: '商業 模擬試験 第2回（時間を計って解く）', book: '商業 模擬②', tag: 't' },
+        { text: '工業 模擬試験 第2回（時間を計って解く）', book: '工業 模擬②', tag: 't' },
+      ]},
+    ],
+  },
+  {
+    label: 'W4', color: '#a78bfa', cbg: 'rgba(167,139,250,0.1)',
+    title: '標準原価計算＋本番仕上げ', date: '3/15 〜 3/21',
+    goal: '🎯 工業の残り論点を終わらせ、本番形式で仕上げる',
+    sections: [
+      { title: '📗 商業 第3問対策（残り）', tasks: [
+        { text: '[6] 財務諸表の作成 V', book: '商業 第3問[6]', tag: 's', v: V.zaimu },
+        { text: '[8] 製造業を営む会社の決算処理', book: '商業 第3問[8]', tag: 's', v: V.kessan2 },
+        { text: '⚠マークの問題だけ再挑戦（新しい問題は追加しない）', book: '商業（⚠の問題）', tag: 's' },
+      ]},
+      { title: '📘 工業 第5問対策（標準・直接原価計算）', tasks: [
+        { text: '標準原価計算（差異分析・勘定記入）を解く', book: '工業 再生リスト⑱〜⑳', tag: 'k', v: V.kogyo },
+        { text: '直接原価計算（財務諸表・CVP分析）を解く', book: '工業 再生リスト㉑〜㉓', tag: 'k', v: V.kogyo },
+        { text: '工業の⚠マークの問題を繰り返す', book: '工業（⚠の問題）', tag: 'k' },
+      ]},
+      { title: '📝 本番演習（仕上げ）', tasks: [
+        { text: '商業 模擬試験 第3回（本番形式・時間厳守）', book: '商業 模擬③', tag: 't' },
+        { text: '工業 模擬試験 第3回（本番形式・時間厳守）', book: '工業 模擬③', tag: 't' },
+        { text: '時間配分を確認（第1問10分・2〜3問50分・4〜5問40分）', book: '—', tag: 't' },
+        { text: '3/21（前日）：新しいことはやらず眺めるだけ。早く寝る 😴', book: '—', tag: 't' },
+      ]},
+    ],
+  },
+];

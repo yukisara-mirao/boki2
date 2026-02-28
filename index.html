@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>簿記2級 学習計画</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-label">STUDY PLAN</div>
+    <div class="sidebar-title">簿記2級<br>問題集計画</div>
+
+    <div class="sync-badge" id="syncBadge">
+      <div class="sync-dot"></div>
+      <span id="syncText">読み込み中...</span>
+    </div>
+
+    <div class="countdown-card">
+      <div class="countdown-num" id="cdNum">—</div>
+      <div class="countdown-label">日 / 試験まで（3月22日）</div>
+    </div>
+
+    <div class="exam-card">
+      <div class="exam-lbl">EXAM DATE</div>
+      <div class="exam-date">3月22日（土）</div>
+      <div class="exam-sub">合格点 70点｜商業60点＋工業40点</div>
+    </div>
+
+    <div class="progress-section">
+      <div class="progress-header">
+        <span class="progress-title">全体進捗</span>
+        <span class="progress-val" id="progressVal">0%</span>
+      </div>
+      <div class="pb-wrap"><div class="pb" id="pb" style="width:0%"></div></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px;font-family:var(--mono)" id="progressLabel">0 / 0 タスク</div>
+    </div>
+
+    <div class="week-nav" id="weekNav"></div>
+
+    <div class="review-panel">
+      <div class="review-panel-title">⚠ 要復習リスト</div>
+      <div id="reviewList"><div class="review-empty">苦手マークした項目がここに表示されます</div></div>
+    </div>
+  </aside>
+  <div class="resize-handle" id="resizeHandle"></div>
+  <main class="main">
+    <div class="mobile-header">
+      <div class="mobile-stats">
+        <div class="mobile-stat">
+          <div class="mobile-stat-num" id="mCd">—</div>
+          <div class="mobile-stat-lbl">試験まで（日）</div>
+        </div>
+        <div class="mobile-stat">
+          <div class="mobile-stat-num" id="mPct">0%</div>
+          <div class="mobile-stat-lbl">進捗</div>
+        </div>
+      </div>
+      <div class="pb-wrap"><div class="pb" id="pbMobile" style="width:0%"></div></div>
+    </div>
+    <div id="weekSections"></div>
+    <div class="tips-section">
+      <div class="tips-title">// TIPS</div>
+      <div class="tip"><span>▶️</span><span>わからない問題は動画を見てから解く。理解→解く の順番が大事</span></div>
+      <div class="tip"><span>⚡</span><span>解けなくてOK。解説を読んで「なるほど」を積み上げる</span></div>
+      <div class="tip"><span>🔁</span><span>同じ問題を繰り返す。初見10分→3回目3分になる</span></div>
+      <div class="tip"><span>⚠️</span><span>⚠ボタンで苦手マーク→サイドバーの要復習リストに自動追加</span></div>
+      <div class="tip"><span>🎯</span><span>工業簿記（第4・5問）は40点。パターンを掴めば確実に得点できる</span></div>
+      <div class="tip"><span>⏱️</span><span>本番の時間配分：第1問10分 / 第2〜3問50分 / 第4〜5問40分</span></div>
+      <div class="tip"><span>😴</span><span>前日は復習のみ。新しいことはやらない。早く寝る</span></div>
+    </div>
+  </main>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
